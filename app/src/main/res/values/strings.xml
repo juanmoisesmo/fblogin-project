@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto Final Login Facebook y Ads</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">276916446060382</string>
+    <string name="id_banner">ca-app-pub-4302504334301946/3961857916</string>
+</resources>
