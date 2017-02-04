@@ -62,6 +62,31 @@ public class MainActivity extends Activity {
         adView.loadAd(adRequest);
     }
 
+    @Override
+    protected void onPause() {
+        if(adView != null){
+            adView.pause();
+        }
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        if(adView != null){
+            adView.resume();
+        }
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        if(adView != null){
+            adView.destroy();
+        }
+        super.onDestroy();
+    }
+
+
     public void getFbKeyHash(String packageName){
 
         try {
@@ -86,28 +111,6 @@ public class MainActivity extends Activity {
         cM.onActivityResult(reqCode, resCode, i);
     }
 
-    @Override
-    protected void onPause() {
-        if(adView != null){
-            adView.pause();
-        }
-        super.onPause();
-    }
 
-    @Override
-    protected void onResume() {
-        if(adView != null){
-            adView.resume();
-        }
-        super.onResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        if(adView != null){
-            adView.destroy();
-        }
-        super.onDestroy();
-    }
 
 }
